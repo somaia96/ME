@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #1c1919;
+}
+.container{
+    /* padding: 30px; */
+    margin:0 30px;
+}
+.section1 .container{
+    /* padding: 30px; */
+    display: flex;
+    height: 600px;
+}
+.section1 .part{
+    flex-basis: 50%;
+}
+nav .container{
+    display: flex;
+    padding:10px 60px;
+    background-color: black;
+    /* padding:0 30px; */
+    justify-content: space-between;
+}
+nav .logo img{
+    width: 60px;
+    /* margin-left: 20px; */
+    /* height: 10px; */
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+}
+nav ul li {
+    text-decoration: none;
+}
+.section1 .part:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .part:nth-of-type(1) img{
+    width: 70%;
+}
+.section1 .part:nth-of-type(2){
+    overflow: hidden;
+    position: relative;
+    /* border: 3px solid;
+    border-color: #a006a8 #a006a8 #a006a8 #a006a8; */
+}
+.section1 .part:nth-of-type(2)::before{
+    content: "My Games";
+    color: #089ae3;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 4vw;
+    text-shadow: 0 0 4px #0978d9;
+}
+
+.section1 .part:nth-of-type(2)::after{
+    content: "";
+    width: 98%;
+    height: 98%;
+    transform: translate(0px,-2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #4e013a 0%,rgb(2, 52, 105) 40%,rgb(180, 196, 4) 80%, rgb(86, 2, 2) 100%) 1;
+}
+.section1 .part:nth-of-type(1)::before{
+    content: "";
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    transform: translate(0px,-2px);
+    top: 0;
+    left: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #ff00bf 0%,rgb(7, 113, 226) 40%,rgb(223, 243, 11) 80%, rgb(111, 4, 4) 100%) 1;
+}
+/* .section1 .part:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    gap: 20px;
+    text-align: right;
+    padding: 20px;
+} */
+/* .section1 .part:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: right;
+    padding: 20px;
+} */
+/* .section1 .part:nth-of-type(2) h2{
+    color: rgb(2, 104, 172);
+    text-align: right;
+}
+.section1 .part:nth-of-type(2) p{
+    position: relative;
+    color: rgb(51, 48, 48);
+    padding: 10px;
+    width: 50%;
+    border: 1px solid;
+} */
+/* .section1 .part:nth-of-type(2) p span{
+    position: absolute;
+    color: firebrick;
+    left: 10px;
+} */
+.lolo{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    margin: auto;
+}
+.section1 .part:nth-of-type(2)>span{
+    --colorBallon:rgb(255, 255, 255);
+    --start:0;
+    --end:100%;
+    position: absolute;
+    bottom: -20%;
+    right: calc(var(--end) - 50%);
+    width: 0;
+    height: 0;
+    border-radius: 50% 50% 0px 77px;
+    border-width:80px 60px;
+    animation: ballon 3s forwards 1;
+    border-style: solid;
+    border-color: var(--colorBallon);
+}
+.section1 .part:nth-of-type(2)>span span{
+    position: absolute;
+    width: 60px;
+    left: 100%;
+    top: 0;
+    transform: translate(43%,81%) rotate(-45deg);
+    height: 80px;
+    transform-origin: right;
+    border-radius: 4%;
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    border-color: var(--colorBallon);
+}
+@keyframes ballon {
+    to{
+        bottom: 120%;
+        right: var(--end);
+    }
+}
+.section1 .container .part:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: rgb(221, 236, 13);
+    position: relative;
+    gap: 70px;
+}
+.section1 .container .part:nth-of-type(1) .games{
+    display: flex;
+    color: #e2e2e2e7;
+    /* justify-content: center;
+    align-content: center;
+    gap: 20px; */
+}
+.section1 .container .part:nth-of-type(1) .games .game{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .container .part:nth-of-type(1) .games .game a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .container .part:nth-of-type(1) .games .game a img{
+    border: 4px solid #089ae3;
+}
