@@ -18,6 +18,17 @@
 //     },1000)
 
     // clock section
+
+    let backClock = document.querySelector(".back");
+    let brightClock = document.querySelector(".bright");
+    setInterval(function(){
+        let a = Math.floor(Math.random()*200);
+        let b = Math.floor(Math.random()*200);
+        let c = Math.floor(Math.random()*200);
+
+        backClock.style.cssText=`background-image: conic-gradient(rgb(${a + 100},${b + 100},${c + 100}) 20%,rgb(${a + 50},${b + 50},${c + 50}) 40%, rgb(${a},${b},${c}) 80%,rgb(${a},${b},${c}) 93%,rgb(${a + 100},${b + 100},${c + 100}) 100%);`
+        brightClock.style.cssText=`background-color: rgba(${a + 50},${b + 50},${c + 50}, 0.68);`;
+    },1000)
     
     let mydate = new Date();
     let hour = mydate.getHours();

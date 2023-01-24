@@ -160,7 +160,7 @@ nav ul li {
 .bright {
     width: 200px;
     height: 200px;
-    background-color: rgb(209 61 226 / 68%);
+    background-color: rgba(209, 61, 226, 0.68);
     filter: blur(50px);
     position: absolute;
     left: 50%;
@@ -173,7 +173,7 @@ nav ul li {
     filter: blur(5%);
     width: 220px;
     margin: auto;
-    background-image: conic-gradient(#ff00aa 20%,#c001b3 40%, #540049 80%,#4e013c 93%,#ff00aa 100%);
+    background-image: conic-gradient(#ff00aa 20%,#c001b3 40%, #540049 80%,rgb(75, 1, 58) 93%,#ff00aa 100%);
     position: relative;
     border-radius: 50%;
     margin-top: calc(50vh - 110px);
