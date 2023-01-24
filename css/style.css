@@ -151,8 +151,11 @@ nav ul li {
 }
 
 /* clock section */
-.clock{
+.clock .parent{
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .bright {
     width: 200px;
@@ -165,11 +168,12 @@ nav ul li {
     transform: translate(-50%, -50%);
 }
 .back{
-    background-color: rgb(197, 103, 240);
+    /* background-color: rgb(197, 103, 240); */
     height: 220px;
     filter: blur(5%);
     width: 220px;
     margin: auto;
+    background-image: conic-gradient(#ff00aa 20%,#c001b3 40%, #540049 80%,#4e013c 93%,#ff00aa 100%);
     position: relative;
     border-radius: 50%;
     margin-top: calc(50vh - 110px);
