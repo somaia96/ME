@@ -192,7 +192,7 @@ nav ul li {
 .span1{
     height: 5px;
     width: 60px;
-    background-color: rgba(231, 88, 88, 0.868);
+    background-color: #e75858dd;
     z-index: 1;
     position: absolute;
     top: 50%;
@@ -202,7 +202,7 @@ nav ul li {
 .span2{
     height: 4px;
     width: 70px;
-    background-color: rgba(86, 193, 134, 0.837);
+    background-color: #56c186d5;
     z-index: 1;
     position: absolute;
     top: 50%;
@@ -279,28 +279,28 @@ nav ul li {
     transform-origin: left top;
 }
 #hour1{
-    transform: rotate(-60deg) translate(0%,-50%);
+    transform: rotate(-60deg) translate(22%,-50%);
 }
 #hour2{
-    transform: rotate(-30deg) translate(0%,-50%);
+    transform: rotate(-30deg) translate(22%,-50%);
 }
 #hour4{
-    transform: rotate(30deg) translate(0%,-50%);
+    transform: rotate(30deg) translate(22%,-50%);
 }
 #hour5{
-    transform: rotate(60deg) translate(0%,-50%);
+    transform: rotate(60deg) translate(22%,-50%);
 }
 #hour7{
-    transform: rotate(120deg) translate(0%,-50%) ;
+    transform: rotate(120deg) translate(22%,-50%) ;
 }
 #hour8{
-    transform: rotate(150deg) translate(0%,-50%) ;
+    transform: rotate(150deg) translate(22%,-50%) ;
 }
 #hour10{
-    transform: rotate(210deg) translate(0%,-50%) ;
+    transform: rotate(210deg) translate(22%,-50%) ;
 }
 #hour11{
-    transform: rotate(240deg) translate(0%,-50%) ;
+    transform: rotate(240deg) translate(22%,-50%) ;
 }
 
 /*  */
