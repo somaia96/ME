@@ -1,23 +1,23 @@
 // create div of ballons
 
-// let ballonDiv = document.querySelector(".section1 .container .part:nth-of-type(2)");
-// setInterval(function(){
-// let ballonSpan = document.createElement("span");
-// ballonSpan.classList.add("span1");
-// let ballonSpanChild = document.createElement("span");
-// ballonSpan.style.cssText=`--colorBallon:rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)});--start:-${Math.floor(Math.random()*20)}%;--end:${Math.floor(Math.random()*200)}%`;
-// ballonSpan.appendChild(ballonSpanChild);
-// ballonDiv.appendChild(ballonSpan);
-// },400)
-// setTimeout(setInterval(function(){
-//     ballonDiv.removeChild(ballonDiv.firstChild);
-// },450),1000)
-// let colorfulDiv = document.querySelector(".section1 .container .part:nth-of-type(1)");
-// setInterval(function(){
-//     colorfulDiv.style.cssText=`background-image:linear-gradient(-45deg,rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}) ${Math.floor(Math.random()*70)}%,rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}) 100%);`;
-//     },1000)
+let ballonDiv = document.querySelector(".gameBallon .container .part:nth-of-type(2)");
+setInterval(function(){
+let ballonSpan = document.createElement("span");
+ballonSpan.classList.add("span1");
+let ballonSpanChild = document.createElement("span");
+ballonSpan.style.cssText=`--colorBallon:rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)});--start:-${Math.floor(Math.random()*20)}%;--end:${Math.floor(Math.random()*200)}%`;
+ballonSpan.appendChild(ballonSpanChild);
+ballonDiv.appendChild(ballonSpan);
+},300)
+setTimeout(setInterval(function(){
+    ballonDiv.removeChild(ballonDiv.firstChild);
+},500),1000)
+let colorfulDiv = document.querySelector(".gameBallon .container .part:nth-of-type(1)");
+setInterval(function(){
+    colorfulDiv.style.cssText=`background-image:linear-gradient(-45deg,rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}) ${Math.floor(Math.random()*70)}%,rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}) 100%);`;
+    },1000)
 
-    // clock section
+//     // clock section
 
     let backClock = document.querySelector(".back");
     let brightClock = document.querySelector(".bright");
@@ -29,12 +29,13 @@
         backClock.style.cssText=`background-image: conic-gradient(rgb(${a + 100},${b + 100},${c + 100}) 20%,rgb(${a + 50},${b + 50},${c + 50}) 40%, rgb(${a},${b},${c}) 80%,rgb(${a},${b},${c}) 93%,rgb(${a + 100},${b + 100},${c + 100}) 100%);`
         brightClock.style.cssText=`background-color: rgba(${a + 50},${b + 50},${c + 50}, 0.68);`;
     },1000)
+
+    // clock programming
     
     let mydate = new Date();
     let hour = mydate.getHours();
     let min = mydate.getMinutes();
     let sec = mydate.getSeconds();
-    console.log(hour1.ariaValueNow);
     let a=sec * 6 - 90;
     let b=min * 6 - 90;
     let c=hour * 30 - 90;
